@@ -11,10 +11,20 @@ public class BusquedaArreglo {
             {9, 1, 5}, // Fila 1
             {3, 8, 6} // Fila 2
         };
-
+        int buscar = 8;
+        
+            for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.print(" "+ matriz[i][j]);
+            }
+            System.out.println(" ");
+        }
+            
+            System.out.println(" Valor a buscar:"+buscar);
+        
         //Implementa una función que realice una búsqueda en la 
         //matriz para encontrar un valor específico que definas.
-        int buscar = 8;
+        
         int[] pos = buscar(matriz, buscar);
 
         //Muestra un mensaje que indique si el valor se encontró o no, 
@@ -23,7 +33,7 @@ public class BusquedaArreglo {
         //la fila y la columan en la que se encuentra
         if (pos[0] != -1) {
             System.out.println(" valor encontrado");
-            System.out.println(" Fila:"+pos[0]+", Columna"+pos[1]);
+            System.out.println(" Fila:"+pos[0]+", Columna:"+pos[1]);
         } else {
             System.out.println("Valor no encontrado");
         }
